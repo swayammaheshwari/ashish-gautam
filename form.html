@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mailing Portal</title>
     <style>
         .field {
             margin-bottom: 10px;
@@ -38,11 +38,11 @@
     <form id="form">
         <div class="field">
             <label for="from_name">Name</label>
-            <input type="text" name="from_name" id="from_name">
+            <input type="text" name="name" id="name">
         </div>
         <div class="field">
             <label for="reply_to">Email</label>
-            <input type="email" name="reply_to" id="reply_to">
+            <input type="email" name="email" id="email">
         </div>
         <div class="field">
             <label for="number">Number</label>
@@ -54,32 +54,7 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script type="text/javascript">
-        emailjs.init('DsK93pjN2mzzzrk0j')
-    </script>
-
-    <script>
-        const btn = document.getElementById('button');
-
-        document.getElementById('form')
-            .addEventListener('submit', function (event) {
-                event.preventDefault();
-
-                btn.value = 'Sending...';
-
-                const serviceID = 'default_service';
-                const templateID = 'template_56idlap';
-
-                emailjs.sendForm(serviceID, templateID, this)
-                    .then(() => {
-                        btn.value = 'Send Email';
-                        alert('Sent!');
-                    }, (err) => {
-                        btn.value = 'Send Email';
-                        alert(JSON.stringify(err));
-                    });
-            });
-    </script>
+    <script src="/assest/js/form.js"></script>
 </body>
 
 </html>
