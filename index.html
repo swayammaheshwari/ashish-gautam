@@ -1023,13 +1023,26 @@
                             EXPERIENCE TRUE FREEDOM FROM EMOTIONAl BAGGAGE</h1>
                     </div>
                 </div>
-                <iframe style="border: none; border-radius: 12px;" width="360" height="315"
-                    src="https://www.youtube.com/embed/fYjHAEDgwH4" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                <div class="elementor-element elementor-element-c52e636 elementor-widget__width-initial elementor-widget-mobile__width-inherit ob-harakiri-inherit exad-sticky-section exad-glass-effect-no ob-has-background-overlay elementor-widget elementor-widget-text-editor"
-                    data-id="c52e636" data-element_type="widget"
-                    data-settings="{&quot;_ob_use_harakiri&quot;:&quot;yes&quot;,&quot;_ob_harakiri_writing_mode&quot;:&quot;inherit&quot;,&quot;_ob_postman_use&quot;:&quot;no&quot;,&quot;_ob_widget_stalker_use&quot;:&quot;no&quot;,&quot;_ob_poopart_use&quot;:&quot;yes&quot;,&quot;_ob_shadough_use&quot;:&quot;no&quot;,&quot;_ob_allow_hoveranimator&quot;:&quot;no&quot;}"
-                    data-widget_type="text-editor.default">
+                <style>
+                    .new-youtube {
+                        min-width: 60rem;
+                    }
+
+                    @media only screen and (max-width: 767px) {
+                        .new-youtube {
+                            min-width: 7rem;
+
+                        }
+                    }
+                </style>
+                <div class="new-youtube">
+                    <iframe style="border: none; border-radius: 12px;" width="60" height="315"
+                        src="https://www.youtube.com/embed/fYjHAEDgwH4" title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <div
+                    class="elementor-element elementor-element-c52e636 elementor-widget__width-initial elementor-widget-mobile__width-inherit ob-harakiri-inherit exad-sticky-section exad-glass-effect-no ob-has-background-overlay elementor-widget elementor-widget-text-editor">
                     <div class="elementor-widget-container">
                         <style>
                             /*! elementor - v3.13.0 - 24-04-2023 */
@@ -2335,6 +2348,20 @@
 
             </div>
         </footer>
+        <script>
+            // JavaScript code for the accordion functionality
+            const accordionItems = document.querySelectorAll('.elementor-accordion-item');
+
+            function toggleAccordion() {
+                this.classList.toggle('opened');
+            }
+
+            // Add click event listeners to each accordion tab
+            accordionItems.forEach(item => {
+                const tab = item.querySelector('.elementor-tab-title');
+                tab.addEventListener('click', toggleAccordion);
+            });
+        </script>
         <script id='eael-general-js-extra'>
             var localize = {
                 "el_breakpoints": {
