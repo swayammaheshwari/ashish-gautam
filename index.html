@@ -1026,20 +1026,29 @@
                 <style>
                     .new-youtube {
                         min-width: 60rem;
+                        z-index: 1;
+                    }
+
+                    .new-youtube iframe {
+                        height: 315px;
                     }
 
                     @media only screen and (max-width: 767px) {
                         .new-youtube {
                             min-width: 7rem;
+                        }
 
+                        .new-youtube iframe {
+                            height: 200px;
                         }
                     }
                 </style>
                 <div class="new-youtube">
-                    <iframe style="border: none; border-radius: 12px;" width="60" height="315"
-                        src="https://www.youtube.com/embed/fYjHAEDgwH4" title="YouTube video player" frameborder="0"
+                    <iframe style="border: none; border-radius: 12px; z-index: 3;" width="560"
+                        src="https://www.youtube.com/embed/fYjHAEDgwH4?autoplay=1" title="YouTube video player"
+                        frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
+                        allowfullscreen aria-disabled="false"></iframe>
                 </div>
                 <div
                     class="elementor-element elementor-element-c52e636 elementor-widget__width-initial elementor-widget-mobile__width-inherit ob-harakiri-inherit exad-sticky-section exad-glass-effect-no ob-has-background-overlay elementor-widget elementor-widget-text-editor">
@@ -1805,7 +1814,8 @@
                                 </style>
                                 <div class="elementor-widget-container">
                                     <div class="elementor-button-wrapper">
-                                        <a href="" class="elementor-button-link elementor-button elementor-size-sm"
+                                        <a href="https://ashishgautam.in/form.html"
+                                            class="elementor-button-link elementor-button elementor-size-sm"
                                             role="button">
                                             <span class="elementor-button-content-wrapper">
                                                 <span class="elementor-button-icon elementor-align-icon-right">
